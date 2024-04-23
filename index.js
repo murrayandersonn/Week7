@@ -94,3 +94,92 @@ function concatenateWord(word, n) {
 // Example usage:
 let concatenatedString = concatenateWord('Hello', 3);
 console.log(concatenatedString); 
+
+
+
+//Full Name Function
+function getFullName(firstName, lastName) {
+    return firstName + ' ' + lastName;
+}
+
+let fullName = getFullName('John', 'Doe');
+console.log("Your full name is", fullName); 
+
+
+
+function isSumGreaterThan100(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum > 100;
+}
+
+// Example usage:
+let numbersArray = [20, 30, 60]; // Sum is 110
+console.log("Is sum greater than 100?", isSumGreaterThan100(numbersArray)); // Output: true
+
+
+
+
+function calculateAverage(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum / numbers.length;
+}
+
+// Example usage:
+let numbersArray2 = [10, 20, 30, 40, 50];
+console.log("Number array average:", calculateAverage(numbersArray2)); // Output: 30
+
+
+
+
+function isAverageGreaterThan(arr1, arr2) {
+    // Calculate average of elements in arr1
+    let sum1 = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        sum1 += arr1[i];
+    }
+    let average1 = sum1 / arr1.length;
+
+    // Calculate average of elements in arr2
+    let sum2 = 0;
+    for (let i = 0; i < arr2.length; i++) {
+        sum2 += arr2[i];
+    }
+    let average2 = sum2 / arr2.length;
+
+    // Compare averages and return result
+    return average1 > average2;
+}
+
+// Example usage:
+let array1 = [10, 20, 30];
+let array2 = [5, 15, 25];
+console.log("Is array1 greater than array2?", isAverageGreaterThan(array1, array2)); // Output: true
+
+
+
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    return isHotOutside && moneyInPocket > 10.50;
+}
+
+// Example usage:
+let hotOutside = true;
+let money = 15.50;
+console.log("Will I buy a drink?", willBuyDrink(hotOutside, money)); // Output: true
+
+
+
+function reverseString(str) {
+    // Convert the string to an array of characters, reverse it, and then join the characters back into a string
+    return str.split('').reverse().join('');
+}
+
+// Example usage:
+let inputString = "hello world";
+console.log(reverseString(inputString)); // Output: "dlrow olleh"
+
